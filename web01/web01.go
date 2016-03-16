@@ -8,7 +8,7 @@ import (
 var closed = true
 
 func hello(w http.ResponseWriter, req *http.Request) {
-	fmt.Fprintf(w, "Hello Samwell!\n¿La cerradura esta cerrada?\n%t", closed)
+	fmt.Fprintf(w, "<h1>Hello Samwell!</h1><p>¿La cerradura esta cerrada? %t</p>", closed)
 }
 
 func lock(w http.ResponseWriter, req *http.Request) {
